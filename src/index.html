@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>CSS STUFF</title>
+  </head>
+  <body>
+    <div class="page">
+      <h2 class="page__header">Hoverable cards</h2>
+      <div class="page__content">
+        <div class="card" id="nature">
+          <div class="card__content">
+            <h3 class="card__header">Nature</h3>
+            <p class="card__desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi
+              eveniet non neque molestiae explicabo odio velit cupiditate iusto
+              error pariatur eos architecto consequatur hic soluta, dolorum in
+              culpa exercitationem fuga?
+            </p>
+            <a href="" class="card__more-info"> Read more</a>
+          </div>
+        </div>
+        <form class="card" id="human">
+          <div class="card__content">
+            <h3 class="card__header">Human</h3>
+            <p class="card__desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi
+              eveniet non neque molestiae explicabo odio velit cupiditate iusto
+              error pariatur eos architecto consequatur hic soluta, dolorum in
+              culpa exercitationem fuga?
+            </p>
+            <a href="" class="card__more-info"> Read more</a>
+          </div>
+        </form>
+        <div class="card" id="space">
+          <div class="card__content">
+            <h3 class="card__header">Space</h3>
+            <p class="card__desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi
+              eveniet non neque molestiae explicabo odio velit cupiditate iusto
+              error pariatur eos architecto consequatur hic soluta, dolorum in
+              culpa exercitationem fuga?
+            </p>
+            <a href="" class="card__more-info"> Read more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page mode">
+      <h2 class="page__header">Dark mode switch</h2>
+      <div class="page__content">
+        <button
+          id="toggle-mode"
+          aria-label="Swtich to dark"
+          class="toggle-mode_light-mode"
+        >
+          <svg
+            viewBox="0 0 512 512"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="toggle__sun"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M330.953 74.9533L256 0L181.047 74.9533H74.9533V181.047L3.05176e-05 256L74.9533 330.953V436.992H180.992L256 512L331.008 436.992H436.992V331.008L512 256L436.992 180.992V74.9533H330.953ZM256 395C332.768 395 395 332.32 395 255C395 177.68 332.768 115 256 115C179.232 115 117 177.68 117 255C117 332.32 179.232 395 256 395Z"
+            />
+            <circle class="toggle__circle" cx="256" cy="256" r="120" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="page">
+      <div class="page__header">Menu button</div>
+      <div class="page__content">
+        <input type="checkbox" name="" id="toggle-btn" />
+        <label for="toggle-btn" class="show-menu">
+          <div class="buttons">
+            <div class="btn">
+              <i class="material-icons">menu</i>
+            </div>
+            <div class="btn">
+              <i class="material-icons">settings</i>
+            </div>
+            <div class="btn">
+              <i class="material-icons">account_circle</i>
+            </div>
+            <div class="btn">
+              <i class="material-icons">info</i>
+            </div>
+            <div class="btn">
+              <i class="material-icons">schedule</i>
+            </div>
+            <div class="btn">
+              <i class="material-icons">language</i>
+            </div>
+            <div class="btn">
+              <i class="material-icons">calendar_today</i>
+            </div>
+            <div class="btn">
+              <i class="material-icons">delete_outline</i>
+            </div>
+            <div class="btn">
+              <i class="material-icons">savings</i>
+            </div>
+          </div>
+        </label>
+      </div>
+    </div>
+
+    <div class="page">
+      <div class="page__header">Menu</div>
+      <div class="page__content">
+        <menu class="side__menu">
+          <li class="menu__item menu__item_active">
+            <i class="material-icons">fingerprint</i>
+            <span>Fingerprints</span>
+          </li>
+          <li class="menu__item">
+            <i class="material-icons">visibility_off</i>
+            <span>Eyes</span>
+          </li>
+          <li class="menu__item">
+            <i class="material-icons">verified_user</i>
+            <span>Protection</span>
+          </li>
+          <li class="menu__item">
+            <i class="material-icons">pets</i>
+            <span>Pets</span>
+          </li>
+        </menu>
+      </div>
+    </div>
+    <div class="page sticky">
+      <div class="page__header">Responsive menu</div>
+      <div class="page__content sticky"></div>
+      <menu class="r-menu">
+        <div class="r-menu__item r-menu__item_placeholder"></div>
+        <li class="r-menu__item r-menu__item_active">
+          <i class="material-icons">thumb_up</i>
+        </li>
+        <li class="r-menu__item">
+          <i class="material-icons">account_box</i>
+        </li>
+        <li class="r-menu__item">
+          <i class="material-icons">thumb_down</i>
+        </li>
+        <li class="r-menu__item">
+          <i class="material-icons">https</i>
+        </li>
+        <li class="r-menu__item">
+          <i class="material-icons">track_changes</i>
+        </li>
+        <div class="r-menu__item r-menu__item_placeholder"></div>
+      </menu>
+    </div>
+  </body>
+</html>

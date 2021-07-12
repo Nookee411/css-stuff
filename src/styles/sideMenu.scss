@@ -1,0 +1,42 @@
+.side__menu {
+  position: absolute;
+  width: 2.5em;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  transition: 200ms cubic-bezier(1, 0.04, 0.01, 0.88);
+  user-select: none;
+
+  &:hover {
+    width: 10em;
+  }
+  .menu__item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    span {
+      margin-left: 2em;
+      font-size: 1.2rem;
+    }
+    padding: 0.5em;
+    background-color: hsl(199, 54%, 44%);
+    cursor: pointer;
+
+    &:last-child {
+      border-radius: 0 0 0.5em 0;
+    }
+  }
+  .menu__item_active {
+    background-color: transparent;
+    + .menu__item {
+      border-radius: 0 0.5em 0 0;
+    }
+  }
+}
